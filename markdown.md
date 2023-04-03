@@ -1,7 +1,7 @@
 
 # Markdown Cheatsheet
 
-This is a reference to the markdown syntax based on [Markdown Crash Course](https://www.youtube.com/watch?v=HUBNt18RFbo "Mardown Youtube tutorial").
+This is a reference to the markdown syntax based on [Markdown Crash Course](https://www.youtube.com/watch?v=HUBNt18RFbo "Mardown Youtube Tutorial").
 
 
 ## Definition
@@ -82,12 +82,16 @@ To create a line break or new line (`<br>`), end a line with two or more spaces,
 
 ##### Markdown syntax:
 ```Markdown
-This is a line with two trailing spaces.  The following line starts here.
+This is a line with two trailing spaces.••  
+The following line starts here.
 ```
+###### Note: trailing spaces are represented with `•`.
+
 ##### HTML output:
 ```HTML
 <p>This is a line with two trailing spaces. <br> The following line starts here.</p>
 ```
+
 ##### Rendered output:
 ```
 This is a line with two trailing spaces.  
@@ -111,25 +115,26 @@ To escape special characters (`#`, `*`, `-`, etc.), precede them with a backslas
 
 To create blockquotes in one or multiple lines, start each line with a *greater than* symbol (`>`).  
 
-> This is a quote. (trailing spaces)  
+> This is a quote.••  
 > This is its second line.
+###### Note: trailing spaces are represented with `•`.
 
 ### Links
 
-To embed a link that redirects to some website, we use the following syntax:
+To embed a link that redirects to some website, use the following syntax:
 
 ##### Markdown syntax:
 ```Markdown
 [Google](https://www.google.com "Some hover message") 
 ```
-Within the squared brackets write the text to be displayed. The parenthesis includes the embeded link and optionally a hover message in quotes or double quotes.
+Within the squared brackets (`[]`) write the text to be displayed. The parenthesis (`()`) includes the embeded link and optionally a hover message in quotes (`''`) or double quotes (`""`).
 
 ##### Rendered output:  
 [Google (embedded link dummy; try it out!)](https://www.google.com 'Some hover message') 
 
 ### Images
 
-Use the same syntax as with links, preceded by an exclamation mark (`!`), to import an image.
+To import an images, use the same syntax as with links preceded by an exclamation mark (`!`).
 
 ##### Markdown syntax:
 ```Markdown
@@ -140,7 +145,7 @@ Use the same syntax as with links, preceded by an exclamation mark (`!`), to imp
 
 ### Unordered Lists
 
- To create an unordered list, start the line with the asterisk symbol (`*`). Precede it with a *tab* to create a nested lists. 
+ To create an unordered list, start the line with the asterisk symbol (`*`). Precede it with a *tab* to create a nested list. 
 
 ##### Markdown syntax:
 ```Markdown
